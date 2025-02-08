@@ -283,7 +283,7 @@ footer p {
     .brands-container-3 {
         flex-direction: row;
         align-items: center;
-        gap: 15px; /* Reduce gap for better spacing */
+        gap: 20px; /* Reduce gap for better spacing */
     }
 
     .brands-container-1 img,
