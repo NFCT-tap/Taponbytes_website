@@ -103,6 +103,63 @@ ul {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+.brands-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.brands-container-1 img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px;
+  }
+
+.brands-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.brands-container-2 img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px;
+  }
+
+  .brands-container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.brands-container-3 img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px;
+  }
+  
 /* Contact Section */
 .contact-links {
     display: flex;
@@ -111,16 +168,41 @@ ul {
     margin-top: 10px;
 }
 
-.contact-links a {
-    color: #2c3e50;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s;
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
 }
 
-.contact-links a:hover {
-    color: #f0b429;
+.social img {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.social img:hover {
+    transform: scale(1.1);
+}
+
+
+.contact-options {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.contact-options img {
+    width: 50px; /* Adjusted size */
+    height: 50px; /* Adjusted size */
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.contact-options img:hover {
+    transform: scale(1.1);
 }
 
 /* Button Styles */
@@ -188,4 +270,5 @@ footer p {
         flex-direction: column;
     }
 }
+
 
