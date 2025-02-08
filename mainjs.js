@@ -10,6 +10,14 @@ function toggleDetails(id) {
     }
 }
 
+function addToCart(productName, productPrice) {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    cart.push({ name: productName, price: productPrice });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${productName} has been added to your cart!`);
+    window.location.href = "cart.html"; // Redirect to the cart page
+  }
+
 function addToCart(productName) {
     alert(productName + " added to cart!");
     window.location.href = "cart.html"; // Redirect to the cart page
