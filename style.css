@@ -278,6 +278,21 @@ footer p {
         max-width: 100%; /* Allow images to take full width on smaller screens */
     }
 
+    .brands-container-1,
+    .brands-container-2,
+    .brands-container-3 {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px; /* Reduce gap for better spacing */
+    }
+
+    .brands-container-1 img,
+    .brands-container-2 img,
+    .brands-container-3 img {
+        width: 120px; /* Slightly smaller images for smaller screens */
+        height: 120px;
+    }
+
     .contact-links {
         flex-direction: column;
     }
