@@ -5,85 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taponbytes - Innovate, Connect, and Succeed</title>
   <link rel="stylesheet" href="style.css">
-  <script>
-    function toggleDetails(id) {
-      const details = document.getElementById(id);
-      const button = document.querySelector(`button[data-target='${id}']`);
-      if (details.style.display === 'none' || details.style.display === '') {
-        details.style.display = 'block';
-        button.textContent = 'Show Less';
-      } else {
-        details.style.display = 'none';
-        button.textContent = 'Show Details';
-      }
-    }
-
-    function addToCart(productName, productPrice) {
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
-      cart.push({ name: productName, price: productPrice });
-      localStorage.setItem('cart', JSON.stringify(cart));
-      alert(`${productName} has been added to your cart!`);
-      window.location.href = "cart.html"; // Redirect to the cart page
-    }
-  </script>
   <style>
     /* General CSS */
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      text-align: center;
-      padding: 20px;
-      background-color: #283e51;
-      color: white;
-    }
-
-    nav a {
-      margin: 0 15px;
-      color: #f0b429;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    #products-container {
-      padding: 20px;
-      background-color: #f9f9f9;
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-      gap: 20px;
-    }
-
-    .product-card {
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 15px;
-      background: #ffffff;
-      text-align: center;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
-
-    .product-images img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-    }
-
     .show-details,
     .add-to-cart {
       margin-top: 10px;
@@ -111,19 +34,6 @@
       color: #555;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #283e51;
-      color: #dcdcdc;
-    }
-
-    .contact-section {
-      padding: 20px;
-      text-align: center;
-      background-color: #f9f9f9;
-      margin-top: 20px;
-    }
   </style>
 </head>
 <body>
@@ -150,7 +60,7 @@
     <div class="product-grid">
       <div class="product-card">
         <div class="product-images">
-          <img src="01.jpg" alt="Two-Sided A5 NFC Scanner Board">
+          <img src="Two-Sided NFC Scanner Board.jpg" alt="Two-Sided A5 NFC Scanner Board">
         </div>
         <h3>Two-Sided NFC Scanner Board – A5 Size</h3>
         <p><strong>MRP:</strong> ₹459/-</p>
@@ -228,6 +138,7 @@
   <section id="contact">
     <h2>Contact Us</h2>
     <p><strong>Address:</strong> Flat no:101, Elite Park, Akshaya Developers, Bowrampet, Medical Malkajgiri District, Telangana, India. PIN code: 500043</p>
+    <h3>Click here</h3>
     <div class="social-icons">
       <a href="https://www.instagram.com/taponbytes_/profilecard/?igsh=ajRxNHlwaGw0NTU1" target="_blank" class="social instagram">
         <img src="social instagram.png" alt="social_instagram">
@@ -258,7 +169,5 @@
   </footer>
 </body>
 </html>
-
-
 
 
