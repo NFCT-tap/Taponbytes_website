@@ -73,6 +73,17 @@ ul {
     margin-left: 20px;
 }
 
+#products-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+  }
+
 /* Product Card Styles */
 .product-card {
     border: 1px solid #ddd;
@@ -80,6 +91,7 @@ ul {
     margin: 20px 0;
     padding: 20px;
     background: #fafafa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s, transform 0.3s;
 }
 
@@ -141,7 +153,7 @@ ul {
     padding: 5px;
   }
 
-  .brands-container-3 {
+.brands-container-3 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
