@@ -217,6 +217,10 @@ footer p {
     font-size: 1em;
 }
 
+* {
+    outline: 1px solid red; /* Highlights all elements */
+}
+
 /* Fix Right Overflow Issue */
 @media (max-width: 768px) {
     html, body {
@@ -251,9 +255,7 @@ footer p {
     .contact-links {
         flex-direction: column;
     }
-    * {
-    outline: 1px solid red; /* Highlights all elements */
-}
+    
 }
 
 
