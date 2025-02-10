@@ -124,15 +124,17 @@ h3, h4 {
 .brands-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    max-width: 100% !important;
+    overflow: hidden;
 }
 
 .brands-container img {
+    max-width: 100%;
     width: 150px;
     height: 150px;
+    height: auto;
     object-fit: contain;
     border: 1px solid #ddd;
     border-radius: 10px;
@@ -245,8 +247,8 @@ footer p {
     }
 
     .brands-container img {
-        width: 120px;
-        height: 120px;
+        width: 80%; /* Adjust to fit smaller screens */
+        max-width: 250px; /* Prevent excessive stretching */
     }
 
     .contact-links {
