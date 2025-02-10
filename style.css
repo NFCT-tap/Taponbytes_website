@@ -251,6 +251,9 @@ footer p {
     .contact-links {
         flex-direction: column;
     }
+    * {
+    outline: 1px solid red; /* Highlights all elements */
+}
 }
 
 
