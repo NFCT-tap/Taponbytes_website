@@ -118,7 +118,7 @@ h3, h4 {
 }
 
 /* Brand Logos */
-.brands-container {
+.brands-container-1  {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -128,7 +128,7 @@ h3, h4 {
     overflow: hidden;
 }
 
-.brands-container img {
+.brands-container-1 img {
     width: 150px;
     height: 150px;
     height: auto;
@@ -238,12 +238,12 @@ footer p {
         grid-template-columns: 1fr; /* Ensure single column on smaller screens */
     }
 
-    .brands-container {
+    .brands-container-1 {
         flex-direction: row;
         justify-content: center;
     }
 
-    .brands-container img {
+    .brands-container-1 img {
         width: 80%; /* Adjust to fit smaller screens */
         max-width: 250px; /* Prevent excessive stretching */
     }
