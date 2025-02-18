@@ -1,9 +1,7 @@
 /* General Styles */
-
-html, body {
+body {
     overflow-x: hidden;
     width: 100%;
-    max-width: 100%;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
@@ -12,13 +10,11 @@ html, body {
     color: #2c3e50; /* Dark slate color for text */
 }
 
-/* Header Styles */
 header {
     width: 100%;
-    max-width: 100%;
-    background: linear-gradient(135deg, #4b79a1, #283e51);
+    background: linear-gradient(135deg, #4b79a1, #283e51); /* Classy gradient: blue-gray to slate */
     color: #fff;
-    padding: 60px 0;
+    padding: 40px 0;
     text-align: center;
 }
 
@@ -34,7 +30,7 @@ header p {
 }
 
 header nav {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 header nav a {
@@ -47,49 +43,55 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #f0b429;
+    color: #f0b429; /* Classy gold accent for hover */
 }
 
 /* Section Styles */
 section {
-    width: 100%;
-    max-width: 900px;
     padding: 30px;
     margin: 20px auto;
+    max-width: 900px; /* Center the content with wider width */
     background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: center; /* Center-align section content */
 }
 
 h2 {
-    color: #283e51;
-    border-bottom: 3px solid #f0b429;
+    color: #283e51; /* Darker heading color */
+    border-bottom: 3px solid #f0b429; /* Gold accent for section titles */
     padding-bottom: 10px;
     font-size: 2em;
+    text-align: center; /* Center align section titles */
 }
 
 h3, h4 {
     color: #2c3e50;
+    text-align: center; /* Center-align subheadings */
 }
 
-/* Product Grid */
+/* List Styles */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
 #products-container {
     padding: 20px;
     background-color: #f9f9f9;
-}
+  }
 
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    max-width: 100%;
-}
+  }
 
-/* Product Card */
+/* Product Card Styles */
 .product-card {
     border: 1px solid #ddd;
     border-radius: 8px;
+    margin: 20px 0;
     padding: 20px;
     background: #fafafa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -98,10 +100,9 @@ h3, h4 {
 
 .product-card:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Subtle lift effect */
 }
 
-/* Product Images */
 .product-images {
     display: flex;
     justify-content: center;
@@ -109,40 +110,75 @@ h3, h4 {
 }
 
 .product-images img {
-    width: 100%;
-    max-width: 280px;
-    height: auto;
+    width: 100%; /* Make images responsive */
+    max-width: 280px; /* Maximum width for images */
+    height: auto; /* Maintain aspect ratio */
     margin: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Brand Logos */
-.brands-container-1  {
+.brands-container-1 {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     align-items: center;
-    max-width: 100% ;
-    overflow: hidden;
-}
+    padding: 20px;
+  }
 
 .brands-container-1 img {
     width: 150px;
     height: 150px;
-    height: auto;
     object-fit: contain;
     border: 1px solid #ddd;
     border-radius: 10px;
     background: #fff;
     padding: 5px;
-}
+  }
 
+.brands-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.brands-container-2 img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px;
+  }
+
+.brands-container-3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.brands-container-3 img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px;
+  }
+  
 /* Contact Section */
 .contact-links {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center-align links */
     gap: 20px;
     margin-top: 10px;
 }
@@ -165,6 +201,7 @@ h3, h4 {
     transform: scale(1.1);
 }
 
+
 .contact-options {
     display: flex;
     justify-content: center;
@@ -173,8 +210,8 @@ h3, h4 {
 }
 
 .contact-options img {
-    width: 50px;
-    height: 50px;
+    width: 50px; /* Adjusted size */
+    height: 50px; /* Adjusted size */
     border-radius: 5px;
     transition: transform 0.3s;
 }
@@ -183,9 +220,9 @@ h3, h4 {
     transform: scale(1.1);
 }
 
-/* Buttons */
+/* Button Styles */
 button {
-    background: #f0b429;
+    background: #f0b429; /* Gold button color */
     color: #fff;
     border: none;
     padding: 12px 20px;
@@ -196,15 +233,15 @@ button {
 }
 
 button:hover {
-    background: #e2a323;
-    transform: scale(1.05);
+    background: #e2a323; /* Slightly darker gold on hover */
+    transform: scale(1.05); /* Subtle zoom on hover */
 }
 
-/* Footer */
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
-    background: #283e51;
+    background: #283e51; /* Match header for consistency */
     color: #dcdcdc;
     position: relative;
     bottom: 0;
@@ -216,17 +253,19 @@ footer p {
     font-size: 1em;
 }
 
-
-/* Fix Right Overflow Issue */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    html, body {
-        overflow-x: hidden;
-        width: 100%;
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1.1em;
     }
 
     section {
+        padding: 10px;
         max-width: 100%;
-        padding: 20px;
     }
 
     button {
@@ -234,26 +273,33 @@ footer p {
         padding: 14px;
     }
 
-    .product-grid {
-        grid-template-columns: 1fr; /* Ensure single column on smaller screens */
+    .product-images {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .brands-container-1 {
+    .product-images img {
+        max-width: 100%; /* Allow images to take full width on smaller screens */
+    }
+
+    .brands-container-1,
+    .brands-container-2,
+    .brands-container-3 {
         flex-direction: row;
-        justify-content: center;
+        align-items: center;
+        gap: 15px; /* Reduce gap for better spacing */
     }
 
-    .brands-container-1 img {
-        width: 80%; /* Adjust to fit smaller screens */
-        max-width: 250px; /* Prevent excessive stretching */
+    .brands-container-1 img,
+    .brands-container-2 img,
+    .brands-container-3 img {
+        width: 120px; /* Slightly smaller images for smaller screens */
+        height: 120px;
     }
 
     .contact-links {
         flex-direction: column;
     }
-    
 }
-
-
 
 
