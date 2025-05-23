@@ -301,7 +301,8 @@ footer p {
 
     .brands-container-1,
     .brands-container-2,
-    .brands-container-3 {
+    .brands-container-3,
+    .brand-container-4 {
         flex-direction: row;
         align-items: center;
         gap: 15px; /* Reduce gap for better spacing */
@@ -309,7 +310,8 @@ footer p {
 
     .brands-container-1 img,
     .brands-container-2 img,
-    .brands-container-3 img {
+    .brands-container-3 img,
+    .brands-container-4 img {
         width: 120px; /* Slightly smaller images for smaller screens */
         height: 120px;
     }
