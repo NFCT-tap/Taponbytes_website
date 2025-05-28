@@ -192,6 +192,24 @@ ul {
     background: #fff;
     padding: 5px;
   }
+.brands-container-5 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+.brands-container-5 img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    padding: 5px;
+  }
   
 /* Contact Section */
 .contact-links {
@@ -302,7 +320,8 @@ footer p {
     .brands-container-1,
     .brands-container-2,
     .brands-container-3,
-    .brand-container-4 {
+    .brands-container-4,
+    .brands-container-5{
         flex-direction: row;
         align-items: center;
         gap: 15px; /* Reduce gap for better spacing */
@@ -311,7 +330,8 @@ footer p {
     .brands-container-1 img,
     .brands-container-2 img,
     .brands-container-3 img,
-    .brands-container-4 img {
+    .brands-container-4 img,
+    .brands-container-5{
         width: 120px; /* Slightly smaller images for smaller screens */
         height: 120px;
     }
