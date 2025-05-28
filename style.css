@@ -1,4 +1,4 @@
-/* General Styles */
+ /* General Styles */
 body {
     overflow-x: hidden;
     width: 100%;
@@ -331,7 +331,7 @@ footer p {
     .brands-container-2 img,
     .brands-container-3 img,
     .brands-container-4 img,
-    .brands-container-5{
+    .brands-container-5 img{
         width: 120px; /* Slightly smaller images for smaller screens */
         height: 120px;
     }
