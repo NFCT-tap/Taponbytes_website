@@ -1,0 +1,191 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Program 7</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: sans-serif;
+      background-color: #ffffff;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .services-container {
+      padding: 40px 20px;
+      text-align: center;
+      background-image: url("https://static.vecteezy.com/system/resources/previews/015/187/165/non_2x/world-map-connection-futuristic-modern-website-background-or-cover-page-for-technology-and-finance-concept-and-education-future-company-vector.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(250, 250, 253);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      color: #f8f8f8;
+      margin-bottom: 30px;
+    }
+
+    /* FLEX CONTAINER FOR 4-CARD LAYOUT */
+    .services-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-box {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      flex: 1 1 calc(25% - 30px); /* 4 cards per row */
+      min-width: 250px;
+      max-width: 280px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .service-box img {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto 10px auto;
+    }
+
+    .service-box h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+      color: #373adb;
+      text-align: center;
+    }
+
+    .service-box li {
+      font-size: 16px;
+      color: #101111;
+      text-align: start;
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+
+    ul {
+      padding-left: 10px;
+    }
+
+    .text-points {
+      color: black;
+      text-align: start;
+    }
+
+    .text-points ul {
+      list-style-type: none;
+    }
+
+    @media (max-width: 768px) {
+      .services-container {
+        padding: 20px 10px;
+      }
+
+      .service-box {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+
+      .service-box h3 {
+        font-size: 22px;
+      }
+
+      .service-box li {
+        font-size: 15px;
+        text-align: start;
+        margin: 5px;
+      }
+
+      .text-points {
+        color: white;
+      }
+
+      h3 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="services-container">
+    <h2>NFC Boards (Acrylic & Metal)</h2>
+    <p>Smart, contactless boards for seamless sharing and modern branding.</p>
+
+    <div class="services-section">
+      <div class="service-box">
+        <img src="img/high-quality-img.jpg" alt="">
+        <h3>High-Quality Build</h3>
+        <ul>
+          <li>Made from durable acrylic or sleek metal</li>
+          <li>Resistant to scratches, fading, and wear</li>
+          <li>Suitable for daily use in any environment</li>
+          <li>Premium look that enhances brand value</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/Instant Contactless Access-img.webp" alt="">
+        <h3>Instant Contactless Access</h3>
+        <ul>
+          <li>Tap-enabled for fast information sharing</li>
+          <li>Works with Android & iOS smartphones</li>
+          <li>No app required — opens directly in browser</li>
+          <li>Great for sharing links, vCards, or menus</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/Customizable Design-img.gif" alt="">
+        <h3>Customizable Design</h3>
+        <ul>
+          <li>Multiple sizes and shapes available</li>
+          <li>Personalized with your logo or branding</li>
+          <li>Choose your color, style, and finish</li>
+          <li>QR code + NFC combo options possible</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/Easy Setup-img.jpg" alt="">
+        <h3>Easy Setup & Maintenance-Free</h3>
+        <ul>
+          <li>No battery or charging needed</li>
+          <li>Just tap and go — plug & play system</li>
+          <li>Works 24/7 without internet dependency</li>
+          <li>One-time setup with lifetime usage</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+
+

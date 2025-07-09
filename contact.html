@@ -1,0 +1,538 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  padding: 10px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Navbar layout */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+/* Logo */
+.logo-image{
+  width: 60px;
+  height: 60px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo span {
+  color: #5b33ec;
+}
+
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Links container - default desktop */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.a-element {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.a-element:hover {
+  color: #5b33ec;
+}
+
+.a-element:last-child {
+  background-color:#5b33ec;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.a-element:last-child:hover {
+  background-color: #5b33ec;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: 10px;
+  
+  }
+  .logo {
+    margin-right: 40px;
+    font-size: 20px;
+  
+   }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    padding: 20px;
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .a-element {
+    padding: 10px 0;
+  }
+
+  .a-element:last-child {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+/*contact us */
+
+
+.header-image img{
+  width: 100%;
+  height: 280px;
+ 
+}
+
+
+.header h1 {
+  font-size: 36px;
+}
+
+.breadcrumb {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-form, .contact-info {
+  flex: 1;
+  min-width: 300px;
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.contact-form h2,
+.contact-info h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #111;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background: #5b33ec;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.info-item span {
+  margin-left: 10px;
+}
+
+.map {
+  width: 100%;
+  height: 350px;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .header-image img{
+    width:100%;
+    height: 100px;
+
+  }
+  .container {
+    flex-direction: column;
+  }
+}
+/*--Get in Touch*/
+
+.Footer-container {
+  background-color: #333;
+  padding-bottom: 4rem;
+ 
+
+}
+
+.Footer {
+  width:100%;
+  height: 40vh;
+  color: #f8f9ff;
+  display: flex;
+  flex-wrap:nowrap;
+  padding-right: 100px ;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.Footer-heading {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+ 
+  
+}
+
+ul{
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.Footer-1 span{
+  color: #5b33ec;
+}
+
+.Footer-1 p{
+  width:80%;
+}
+.para{
+  font-size: 12px;
+}
+.btnsecondary{
+  color: white;
+  border: 2px solid #5b33ec;
+  background-color:#5b33ec;
+  border-radius: 10px;
+  padding: 3px 3px;
+}
+
+.Footer-2{
+  font-size: 16px;
+  width: 30%;
+}
+.Footer-2 h3{
+  color: #5b33ec;
+}
+
+.Footer-2 ul li {
+  margin-bottom: 5px;
+  
+ 
+}
+
+.Footer-2 ul li a {
+  color: #fff;
+  text-decoration: none;
+ 
+}
+
+.Footer-3{
+    font-size: 14px;
+    padding-left: 120px;
+    width: 70%;
+  }
+.Footer-3 ul li {
+  margin-bottom: 5px;
+}
+
+.Footer-3 h3{
+  color: #5b33ec;
+  font-size: 20px;
+}
+
+
+.Footer-4{
+ padding-left: 30px;
+
+}
+
+.Footer-4 ul li {
+  margin-bottom: 5px;
+}
+
+.Footer-4 h3{
+  color: #5b33ec;
+  
+}
+.img-icon{
+  width:25px ;
+  height: 25px;
+  margin-right: 10px;
+ 
+}
+.Footer-bottom{
+  height: 15%;
+  text-align: center;
+  font-size: 15px;
+}
+
+@media (max-width: 768px){
+ 
+.Footer{
+  height: 30%;
+  flex-direction: column;
+  
+}
+
+.Footer-1{
+  width:150%;
+}
+
+.Footer-2 {
+ width:120%;
+}
+
+.Footer-3{
+  width: 120%;
+  padding-left: 3px;
+}
+
+.Footer-4 {
+  padding-left: 3px;
+  width: 140%;
+  
+}
+.Footer-bottom {
+  height: 15%;
+  text-align: center;
+  font-size: 10px;
+}
+
+}
+
+  </style>
+</head>
+<body>  
+   <!-- nav-bar section -->
+   <header>
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo-image" class="logo-image">
+
+        <p class="logo-text"><b>Tapon</b></p><span>Bytes</span>
+       
+    </div>
+  
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="navbar-links" id="navLinks">
+        <a class="a-element" href="index.html">Home</a>
+        <a class="a-element" href="index.html">Services</a>
+        <a class="a-element" href="about.html">About</a>
+        <a class="a-element" href="contact.html">Contacts</a>
+        <a class="a-element" href="#GetQuote">Get Quote</a>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+  <!--contact us banner-->
+  <div class="header-image">
+    <img src="https://media.istockphoto.com/illustrations/contact-us-special-blue-banner-background-illustration-id1147152500?k=20&m=1147152500&s=170667a&w=0&h=oCFGwwytrFEcgsCJbRNYcGsLrjcU3FNBGodzYYrLawg=">
+  </div> 
+  <!--contact form left section-->
+   <div class="container">
+    <div class="contact-form">
+      <h2>Let's Talk</h2>
+      <p>Send us a message and we’ll respond as soon as possible</p><br>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="e1e20ffd-f652-4781-87b0-42698383f98a">
+       
+        
+        <input type="text" name="Full Name" placeholder="Full Name" required>
+        <input type="email" name="Email" placeholder="Email Address" required>
+        <input type="tel" name="Phone" placeholder="Phone Number">
+        <textarea name="Message" rows="5" placeholder="Your Message here" required></textarea>
+      
+        <button type="submit">Send Message →</button>
+      </form>
+    </div>
+     <!--contact form right section-->
+    <div class="contact-info">
+  <h2>Need Any Help?</h2>
+  <p>Call us or message and we’ll respond as soon as possible</p>
+  <div class="info-item">📞 <span>9032498967</span></div>
+  <div class="info-item">📧 <span>nfct.tap@gmail.com</span></div>
+  <div class="info-item">📍 <span>plot # 37 & 38, Serinity Square, Madhapur, Hyderabad, Telangana 500081</span></div>
+</div>
+
+  </div>
+    <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7612.756417616902!2d78.38254429999999!3d17.441602900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb934013867eef%3A0x82fdc7498bfdc0ed!2sRENT%20A%20DESK%20-%20Mind%20Space!5e0!3m2!1sen!2sin!4v1752047359095!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>  
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+    });
+  </script>
+
+  <!--Footer-->
+<div class="Footer-container">
+  <div class="Footer">
+    <div class="Footer-heading Footer-1">
+      <h2>Tapon<span>Bytes</span></h2><br>
+    <p>We build smart, scalable, and creative digital solutions that help businesses grow online. Our passion is turning ideas into interactive websites, mobile apps, and powerful marketing tools.</p><br>
+    <h4>Stay updated</h4>
+    <form action="https://formsubmit.co/nfct.tap@gmail.com" method="POST" class="subscribe-form">
+      <!-- Redirect after submit -->
+      <input type="hidden" name="_next" value="https://srijagoud123.github.io/thankyou.html">
+    
+      <!-- Custom subject (optional) -->
+      <input type="hidden" name="_subject" value="📩 New Subscriber Alert!">
+    
+      <!-- Disable CAPTCHA (optional) -->
+      <input type="hidden" name="_captcha" value="false">
+    
+      <!-- Input -->
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+    
+    </div>
+ 
+
+
+<!--Quick links-->
+<div class="Footer-heading Footer-2">
+  <h3>Quick links</h3><br>
+  <ul>
+    <li><a href=index.html>Home</a></li>
+    <li><a href=index.html>Services</a></li>
+    <li><a href=about.html>About</a></li>
+    <li><a href=contact.html>Contacts</a></li>
+    
+
+  </ul>
+</div>
+
+
+<div class="Footer-heading Footer-3">
+  <h3>Our Services</h3><br>
+  <ul>
+    <li>Digital Marketing</li>
+    <li>Theatre Billing Software</li>
+    <li>NFC Boards</li>
+    <li>Magical Review</li>
+    <li>Offline Marketing</li>
+    <li>Branding & Design</li>
+    <li>Website Design and Development</li>
+    <li>Mobile App Development</li>
+ 
+  </ul>
+</div>
+
+
+<div class="Footer-heading Footer-4">
+  <h3>Get In Touch</h3><br>
+  <ul>
+    <li>📍Plot # 37 & 38, Serinity Square, Madhapur, Hyderabad, Telangana 500081</li>
+    <li>📧nfct.tap@gmail.com</li>
+    <li>📞9032498967</li>
+<br>
+    <a href="https://www.instagram.com/taponbytes?igsh=ajRxNHlwaGw0NTU1&utm_source=qr" target="_blank">
+    <img src="img/insta icon.png" alt="social-icon" class="img-icon">
+
+    <a href="https://wa.me/9390144824" target="_blank">
+    <img src="img/whatsapp icon.png" alt="social-icon" class="img-icon">
+
+    <a href="https://www.linkedin.com/in/taponbytes-communication-060788336" target="_blank">
+    <img src="img/linkedin icon.png" alt="social-icon" class="img-icon">
+
+    <a href="https://maps.app.goo.gl/hmyJKDJy6NWinoAz7?g_st=com.google.maps.preview.copy" target="_blank">
+      <img src="img/location icon.jpg" alt="social-icon" class="img-icon">
+
+    </a>
+  </ul>
+</div>
+
+</div>
+</div>
+
+<div class="Footer-bottom">
+  <p>© 2025 TaponBytes. All rights reserved. Powered by innovation </p>
+</div>
+  
+  <script>
+    const menu = document.querySelector('.navbar-links');
+    const links = document.querySelectorAll('.a-element');
+    const toggleBtn = document.querySelector('.hamburger'); // your hamburger button
+  
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+       menu.classList.remove('show') //update hamburger icon
+      });
+    });
+  </script>
+  </body>
+</html>

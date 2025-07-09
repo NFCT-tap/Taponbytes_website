@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Socialy</title>
+  <style>
+   html,body{
+  margin:0;
+  padding:0;
+  overflow-x:hidden;
+}
+* {
+ 
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #f9f9f9;
+}
+
+header {
+  background-color: white;
+  padding: 10px 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+/* Logo */
+.logo-image{
+  width: 60px;
+  height: 60px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo span {
+  color: #5b33ec;
+}
+
+
+/* Hamburger hidden by default */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Links container - default desktop */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  text-align: left;
+}
+
+.a-element {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.a-element:hover {
+  color: #5b33ec;
+}
+
+.a-element:last-child {
+  background-color:#5b33ec;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.a-element:last-child:hover {
+  background-color: #5b33ec;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    margin-left: 10px;
+  
+  }
+  .logo {
+    margin-right: 40px;
+    font-size: 20px;
+  
+   }
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    padding: 20px;
+    box-shadow: -2px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .a-element {
+    padding: 10px 0;
+  }
+
+  .a-element:last-child {
+    width: 100%;
+    text-align: center;
+  }
+
+}
+
+/* ABOUT SECTION */
+.about-section {
+  background: #5b33ec;
+  padding: 20px 10%;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.about-section h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #f8f6f6;
+}
+.about-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 20px;
+  color: #f8f6f6;
+}
+
+
+@media (max-width: 768px) {
+.about-section h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #f8f6f6;
+}
+.about-section p {
+    max-width:150%;
+    margin: 0 auto;
+  text-align:justify;
+  padding-right: 40px;
+  font-size: 15px;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #f8f6f6;
+}
+    
+}
+
+
+/* GROWTH SECTION */
+.growth-section {
+  text-align: center;
+  padding: 60px 10%;
+}
+.growth-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.growth-section p{
+    color: #333;
+    
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+}
+.feature-box {
+  background: #5b33ec;
+  padding: 20px;
+  border-radius: 10px;
+}
+.feature-box h3{
+    color: #ffffff;
+}
+.feature-box p{
+    color: #ffffff;
+}
+.feature-box .icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .features {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .feature-box {
+    width: 30%;
+  }
+}
+
+  
+
+  </style>
+
+
+  <!-- Header -->
+  <header>
+    <div class="nav-bar">
+        <div class="logo">
+          <img src="img/logo.png" alt="logo-image" class="logo-image">
+  
+          <p class="logo-text"><b>Tapon</b></p><span>Bytes</span>
+         
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="navbar-links" id="navLinks">
+        <a class="a-element" href="index.html">Home</a>
+        <a class="a-element" href="index.html">Services</a>
+        <a class="a-element" href="about.html">About</a>
+        <a class="a-element" href="contact.html">Contacts</a>
+        <a class="a-element" href="#GetQuote">Get Quote</a>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="about-header">
+      <h1>About us</h1>
+      <p>Taponbytes Communications Private Limited is a dynamic technology company offering a wide range of digital services tailored to meet modern business needs. We specialize in innovative software development, full-stack branding, digital marketing and  NFC solutions services that elevate your presence both online and offline.
+
+        Our mission is to blend technology and creativity to build smart, result-oriented solutions that drive business growth and customer engagement.</p>
+    </div>
+  </section>
+
+ 
+
+ 
+
+  <!-- Growth Section -->
+  <section class="growth-section">
+    <h2>We help bussiness to grow faster and bigger</h2>
+    <p>At TaponBytes, we combine technology, design, and strategy to help businesses of all sizes reach their full potential..</p>
+    <div class="features">
+      <div class="feature-box">
+        <div class="icon">👥</div>
+        <h3>Professional Team</h3>
+        <p>Our experienced and creative team works closely with clients to bring their ideas to life with precision and passion.</p>
+      </div>
+      <div class="feature-box">
+        <div class="icon">🎯</div>
+        <h3>Target Oriented</h3>
+        <p>Every project is built with a clear goal in mind — helping your business connect with the right audience and grow faster.</p>
+      </div>
+      <div class="feature-box">
+        <div class="icon">✅</div>
+        <h3>Success Guarantee</h3>
+        <p>From Web design, mobile app development,NFC products and digital branding, we deliver reliable solutions that ensure long-term success and measurable impact.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+  
+</body>
+</html>
