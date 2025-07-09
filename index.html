@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tapon Bytes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- nav-bar section -->
+  <header>
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="img/logo.png" alt="logo-image" class="logo-image">
+
+        <p class="logo-text"><b>Tapon</b></p><span>Bytes</span>
+       
+    </div>
+  
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <div class="navbar-links" id="navLinks">
+        <a class="a-element" href="#Home">Home</a>
+        <a class="a-element" href="#Services">Services</a>
+        <a class="a-element" href="about.html">About</a>
+        <a class="a-element" href="contact.html">Contacts</a>
+        <a class="a-element" href="getquote.html">Get Quote</a>
+      </div>
+    </div>
+  </header>
+  
+  <script>
+    function toggleMenu() {
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
+<!-- Home Section -->
+<div class="home-section" id="Home">
+  <div class="home-content">
+    <h1>Web, App & Digital Marketing Experts</h1>
+    <p><strong>We build powerful websites, apps, and campaigns to grow your brand online</strong></p>
+    <div class="home-buttons">
+      <a href="start.html" class=" btn primary">Start Your Work</a>
+      <a href="view.html" class=" btn secondary">View Our Clients</a>
+    </div>
+  </div>
+  
+</div>
+<!--Service we offer Section-->
+  <div class="services-section" id="Services">
+    <h2>Services We Offer</h2>
+    <p class="description">
+      Explore our tailored solutions designed to drive growth, innovation, and digital excellence.
+    </p>
+    <div class="services-container">
+      <div class="service-card">
+        <div class="icon">🌐</div>
+        <h3>Website Design & Development</h3>
+        <p>Custom websites built for performance, usability, and brand impact.</p>
+        <a href="serviceprogram1.html">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📲</div>
+        <h3> Mobile App Development (Android, iOS, Tab)</h3>
+        <p>Intuitive mobile apps built for performance across Android, iOS, and tablets.</p>
+        <a href="serviceprogram2.html">Learn More →</a>
+      </div> 
+
+      <div class="service-card">
+        <div class="icon">🎨 </div>
+        <h3> Branding & Design (Logo, menu, packaging, etc.)</h3>
+        <p>Strategic branding and design to elevate your business presence.</p>
+        <a href="serviceprogram3.html">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">💻</div>
+        <h3>Theatre Billing Software</h3>
+        <p>Seamless ordering and billing tailored for theatres.</p>
+        <a href="serviceprogram4.html">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📢</div>
+        <h3>Digital Marketing</h3>
+        <p>Marketing strategies that drive engagement and growth.</p>
+        <a href="serviceprogram5.html" class="service-link">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">🏢</div>
+        <h3> Offline Marketing (Auto ads, newspapers, etc.)</h3>
+        <p>Targeted offline campaigns built to maximize local reach.</p>
+        <a href="serviceprogram6.html">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">✨</div>
+        <h3> Magical Review QR System</h3>
+        <p>Effortless feedback collection through smart QR technology</p>
+        <a href="serviceprogram7.html">Learn More →</a>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">📦</div>
+        <h3> NFC Boards (Acrylic & Metal)</h3>
+        <p>Precision-built NFC boards for fast,contactless access.</p>
+        <a href="serviceprogram8.html">Learn More →</a>
+      </div>
+    </div>
+  </div>
+
+  <!--Responsive counter section-->
+
+  <div class=" stats-section">
+    <div class="stat-box">
+      <i class="fa-solid fa-chart-line"></i>
+      <div class="stat-number" data-target="89">0</div>
+      <div class="stat-label">projects completed</div>
+    </div>
+
+    <div class="stat-box">
+      <i class="fa-solid fa-thumbs-up"></i>
+      <div class="stat-number" data-target="87">0</div>
+      <div class="stat-label">%Client Satisfaction</div>
+    </div>
+
+    <div class="stat-box">
+      <i class="fa-solid fa-business-time"></i>
+      <div class="stat-number" data-target="5">0</div>
+      <div class="stat-label">Years Experience</div>
+    </div>
+
+    <div class="stat-box">
+      <i class="fa-solid fa-headset"></i>
+      <div class="stat-number" data-target="24">0</div>
+      <div class="stat-label">/7 support</div>
+    </div>
+    <div class="stat-box">
+      <i class="fa-solid fa-laptop-file"></i>
+      <div class="stat-number" data-target="60">0</div>
+      <div class="stat-label">% of projects under 30k</div>
+    </div>
+    <div class="stat-box">
+      <i class="fa-solid fa-person"></i>
+      <div class="stat-number" data-target="128">0</div>
+      <div class="stat-label">Clients</div>
+    </div>
+    
+  </div>
+
+  <script>
+    
+  const counters = document.querySelectorAll('.stat-number');
+
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      let count = 0;
+
+      const duration = 2000; // total animation duration in ms (2 seconds)
+      const steps = 100;     // total number of increments
+      const increment = target / steps;
+      const delay = duration / steps;
+
+      const updateCount = () => {
+        count += increment;
+        if (count < target) {
+          counter.innerText = Math.floor(count);
+          setTimeout(updateCount, delay);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.disconnect(); // only once
+      }
+    });
+  });
+
+  observer.observe(document.querySelector('.stats-section'));
+</script>
+
+
+
+  <!--Why-choose section-->
+  <div class="why-choose-section">
+    <div class="text-content">
+      <h2>WHY CHOOSE TAPONBYTES?</h2>
+      <p>We are a team of creative developers, digital marketers, and branding experts focused on delivering impactful digital solutions. With strong industry knowledge and innovative tools, we help brands grow their online presence and customer engagement. Our services combine smart NFC technology with strategic marketing and modern design to build modern solutions that deliver real results and business growth.</p>
+      <p><strong>What Sets Us Apart:</strong></p>
+      <ul>
+        <li>Experience with 5+ years in digital services</li>
+        <li>NFC board and card development experts</li>
+        <li>Google review and billing software solutions</li>
+        <li>Mobile-friendly and optimized websites</li>
+        <li>Fast delivery and 24/7 Support</li>
+        <li>Transparent pricing with no hidden costs</li>
+      </ul>
+    </div>
+
+    <div class="blue-box">
+      <h3>Professional Development Team</h3>
+      <p>We are a team of skilled professionals in web and mobile development, digital marketing, and NFC integration, committed to delivering high-impact solutions for modern businesses.
+         <br><br>
+        Our team includes experienced front-end and back-end developers, UI/UX designers, and digital marketing specialists who work together to create innovative and scalable solutions.</p>
+    </div>
+  </div>
+ 
+<!-- Ready to start your project-->
+
+<div class="Ready-to-start">
+  <h2>Ready to Start Your Project?</h2><br>
+  <p>We are ready to help build your idea. Just click and let's get started.</p><br>
+  <div class="Ready-button">
+  <a href="getquote.html" class=" btn primary">GetFree Quote</a>
+
+</div>
+</div>
+
+<!--Footer-->
+<div class="Footer-container">
+  <div class="Footer">
+    <div class="Footer-heading Footer-1">
+      <h2>Tapon<span>Bytes</span></h2><br>
+    <p>We build smart, scalable, and creative digital solutions that help businesses grow online. Our passion is turning ideas into interactive websites, mobile apps, and powerful marketing tools.</p><br>
+    <h4>Stay updated</h4>
+   
+    <form action="https://formsubmit.co/nfct.tap@gmail.com" method="POST" class="subscribe-form">
+      <!-- Redirect after submit -->
+      <input type="hidden" name="_next" value="https://srijagoud123.github.io/thankyou.html">
+    
+      <!-- Custom subject (optional) -->
+      <input type="hidden" name="_subject" value="📩 New Subscriber Alert!">
+    
+      <!-- Disable CAPTCHA (optional) -->
+      <input type="hidden" name="_captcha" value="false">
+    
+      <!-- Input -->
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit" class="subscribe-btn">Subscribe</button>
+    </form>
+    
+    </div>
+ 
+
+
+<!--Quick links-->
+<div class="Footer-heading Footer-2">
+  <h3>Quick links</h3><br>
+  <ul>
+    <li><a href=#>Home</a></li>
+    <li><a href=#>Services</a></li>
+    <li><a href=#>About</a></li>
+    <li><a href=#>Clients</a></li>
+    <li><a href=#>Contacts</a></li>
+  </ul>
+</div>
+
+
+<div class="Footer-heading Footer-3">
+  <h3>Our Services</h3><br>
+  <ul>
+    <li>Digital Marketing</li>
+    <li>Theatre Billing Software</li>
+    <li>NFC Boards</li>
+    <li>Magical Review</li>
+    <li>Offline Marketing</li>
+    <li>Branding & Design</li>
+    <li>Website Design and Development</li>
+    <li>Mobile App Development</li>
+ 
+  </ul>
+</div>
+
+
+<div class="Footer-heading Footer-4">
+  <h3>Get In Touch</h3><br>
+  <ul>
+    <li>📍Plot # 37 & 38, Serinity Square, Madhapur, Hyderabad, Telangana 500081</li>
+    <li>📧nfct.tap@gmail.com</li>
+    <li>📞9032498967</li>
+<br>
+    <a href="https://www.instagram.com/taponbytes?igsh=ajRxNHlwaGw0NTU1&utm_source=qr" target="_blank">
+    <img src="img/insta icon.png" alt="social-icon" class="img-icon">
+
+    <a href="https://wa.me/9390144824" target="_blank">
+    <img src="img/whatsapp icon.png" alt="social-icon" class="img-icon">
+
+    <a href="https://www.linkedin.com/in/taponbytes-communication-060788336" target="_blank">
+    <img src="img/linkedin icon.png" alt="social-icon" class="img-icon">
+
+    <a href="https://maps.app.goo.gl/hmyJKDJy6NWinoAz7?g_st=com.google.maps.preview.copy" target="_blank">
+      <img src="img/location icon.jpg" alt="social-icon" class="img-icon">
+
+    </a>
+  </ul>
+</div>
+
+</div>
+</div>
+
+<div class="Footer-bottom">
+  <p>© 2025 TaponBytes. All rights reserved. Powered by innovation </p>
+</div>
+  
+  <script>
+    const menu = document.querySelector('.navbar-links');
+    const links = document.querySelectorAll('.a-element');
+    const toggleBtn = document.querySelector('.hamburger'); // your hamburger button
+  
+    links.forEach(link => {
+      link.addEventListener('click', () => {
+       menu.classList.remove('show') //update hamburger icon
+      });
+    });
+  </script>
+</body>
+</html>

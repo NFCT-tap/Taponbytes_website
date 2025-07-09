@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Program 4</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: sans-serif;
+      background-color: #ffffff;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .services-container {
+      padding: 40px 20px;
+      background-image: url("https://t3.ftcdn.net/jpg/03/91/46/10/360_F_391461057_5P0BOWl4lY442Zoo9rzEeJU0S2c1WDZR.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #f8f8f8;
+      margin-bottom: 30px;
+    }
+
+    .services-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-box {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      flex: 1 1 calc(33.33% - 30px); /* 3 cards per row */
+      max-width: 350px;
+    }
+
+    .service-box img {
+      max-width: 200px;
+      margin: 0 auto 10px;
+    }
+
+    .service-box h3 {
+      font-size: 22px;
+      color: #373adb;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+
+    .service-box li {
+      font-size: 16px;
+      color: #101111;
+      text-align: left;
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+
+    ul {
+      padding-left: 10px;
+    }
+
+    .text-points {
+      width: 100%;
+      max-width: 1000px;
+      margin: 40px auto 0;
+      color: #f8f8f8;
+      text-align: left;
+    }
+
+    .text-points h3 {
+      text-align: start;
+      color: #ffffff;
+    }
+
+    .text-points ul {
+      list-style-type: none;
+      padding: 0 20px;
+      color: #f8f8f8;
+      
+    }
+
+    .text-points li {
+      margin-bottom: 10px;
+      text-align: start;
+
+    }
+
+    /* Responsive: Tablet View */
+    @media (max-width: 992px) {
+      .service-box {
+        flex: 1 1 calc(45% - 20px); /* 2 cards per row */
+      }
+    }
+
+    /* Responsive: Mobile View */
+    @media (max-width: 600px) {
+      .service-box {
+        flex: 1 1 100%; /* 1 card per row */
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="services-container">
+    <h2>Billing Software – Theatre Food Ordering</h2>
+    <p>Smart seat-based food ordering and digital billing system for cinemas</p>
+
+    <div class="services-section">
+      <div class="service-box">
+        <img src="img/ordering-img.jpg" alt="">
+        <h3>Seat-Based Food Ordering</h3>
+        <ul>
+          <li>Customers scan QR codes placed on seats.</li>
+          <li>Instantly browse and order food from mobile</li>
+          <li>No need to leave seats during movie</li>
+          <li>Works without downloading any app</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/billing-img.jpg" alt="">
+        <h3>Instant Digital Billing</h3>
+        <ul>
+          <li>Automatic bill generation after order.</li>
+          <li>Digital receipts sent via SMS or WhatsApp.</li>
+          <li>Reduces long queues at counters.</li>
+          <li>Fast and secure UPI/card payment options.</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/thretre-img.jpg" alt="">
+        <h3>Full Theatre Integration</h3>
+        <ul>
+          <li>Each order is linked with seat number.</li>
+          <li>Staff can view which seat placed which order</li>
+          <li>Supports single or multi-screen theatres.</li>
+          <li>Seat layout synced with kitchen and billing.</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/orderalert-img.jpg" alt="">
+        <h3>Live Order Alerts</h3>
+        <ul>
+          <li>Real-time alerts sent to kitchen display</li>
+          <li>Staff notified instantly for delivery</li>
+          <li>Reduces delay and confusion</li>
+          <li>Better coordination between departments</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/sales-dashboard-img.jpg" alt="">
+        <h3>Sales Dashboard</h3>
+        <ul>
+          <li>Daily sales tracking with charts</li>
+          <li>Downloadable reports in Excel/PDF.</li>
+          <li>Track top-selling items and trends</li>
+          <li>Monitor real-time order performance.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-points">
+      <h3>We provide:</h3><br>
+      <ul>
+        <li>✅ Acrylic QR Boards – sleek & easy to scan</li>
+        <li>✅ Metal Boards – durable, branded & long-lasting</li>
+        <li>✅ QR Menu Setup – digital menu linked to your system</li>
+        <li>✅ Custom Branding – your theatre’s name/logo on all assets</li>
+      </ul>
+    </div>
+  </section>
+</body>
+</html>

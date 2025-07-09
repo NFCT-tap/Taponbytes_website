@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mobile App Development</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: sans-serif;
+      background-color: #ffffff;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .services-container {
+      padding: 40px 20px;
+      text-align: center;
+      background-image: url("https://png.pngtree.com/background/20230411/original/pngtree-corporate-website-blue-abstract-background-picture-image_2389757.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(250, 250, 253);
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #f8f8f8;
+      margin-bottom: 30px;
+    }
+
+    .services-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-box {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      flex: 1 1 calc(33.33% - 30px); /* 3 per row */
+      min-width: 280px;
+      max-width: 350px;
+      text-align: center;
+    }
+
+    .service-box img {
+      max-width: 200px;
+      margin: 0 auto 10px auto;
+    }
+
+    .service-box h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+      color: #373adb;
+    }
+
+    .service-box li {
+      font-size: 16px;
+      color: #101111;
+      text-align: start;
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+
+    ul {
+      padding-left: 10px;
+    }
+
+    @media (max-width: 992px) {
+      .service-box {
+        flex: 1 1 calc(50% - 30px); /* 2 per row on tablets */
+      }
+    }
+
+    @media (max-width: 600px) {
+      .service-box {
+        flex: 1 1 100%; /* 1 per row on phones */
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="services-container">
+    <h2>Mobile App Development</h2>
+    <p>We build custom apps for Android, iOS & Tablets to take your business mobile:</p>
+
+    <div class="services-section">
+      <div class="service-box">
+        <img src="img/custom-img.jpg" alt="">
+        <h3>Custom App Development</h3>
+        <ul>
+          <li>Business apps for services, bookings & orders</li>
+          <li>Event & eCommerce app solutions</li>
+          <li>Loyalty & customer engagement apps</li>
+          <li>Educational, healthcare, & travel apps</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/andriod ios-img.jpg" alt="">
+        <h3>Android, iOS & Tablet Compatibility</h3>
+        <ul>
+          <li>Native and hybrid app development</li>
+          <li>Responsive UI across screen sizes</li>
+          <li>Performance-tested for Android & iOS</li>
+          <li>Tablet-specific layout adjustments</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/userfriendly-img.jpg" alt="">
+        <h3>User-Friendly Interface</h3>
+        <ul>
+          <li>Simple navigation with modern UI/UX</li>
+          <li>Brand-aligned color schemes & elements</li>
+          <li>Accessibility features included</li>
+          <li>Fast load times & smooth transitions</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/integrated-img.jpg" alt="">
+        <h3>Integrated Features</h3>
+        <ul>
+          <li>Payment gateways (UPI, Stripe, Razorpay)</li>
+          <li>Push notifications & in-app messages</li>
+          <li>Live tracking, GPS, and QR scanning</li>
+          <li>Chat, reviews, and user feedback options</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/appstore-img.jpg" alt="">
+        <h3>Play Store & App Store Support</h3>
+        <ul>
+          <li>Store listing creation & ASO</li>
+          <li>App publishing and version control</li>
+          <li>Policy compliance (Google & Apple)</li>
+          <li>Post-launch updates and monitoring</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

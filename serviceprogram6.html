@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Program 6</title>
+  <style>
+    /* RESET and GLOBAL styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: sans-serif;
+      background-color: #ffffff;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .services-container {
+      padding: 40px 20px;
+      text-align: center;
+      background-image: url("https://st4.depositphotos.com/6504442/20621/v/450/depositphotos_206214768-stock-illustration-light-blue-vector-cover-spots.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      color: rgb(10, 10, 10);
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      text-align: center;
+      color: #0e0d0d;
+      margin-bottom: 30px;
+    }
+
+    .services-section {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-box {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      flex: 1 1 calc(25% - 30px); /* 4 per row */
+      min-width: 250px;
+      max-width: 280px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .service-box img {
+      width: 100%;
+      max-width: 200px;
+      margin: 0 auto 10px auto;
+    }
+
+    .service-box h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+      color: #373adb;
+      text-align: center;
+    }
+
+    .service-box li {
+      font-size: 16px;
+      color: #101111;
+      text-align: start;
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+
+    ul {
+      padding-left: 10px;
+    }
+
+    .text-points {
+      color: black;
+      text-align: start;
+    }
+
+    .text-points ul {
+      list-style-type: none;
+    }
+
+    @media (max-width: 768px) {
+      .services-container {
+        padding: 20px 10px;
+      }
+
+      .service-box {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+
+      .service-box h3 {
+        font-size: 22px;
+      }
+
+      .service-box li {
+        font-size: 15px;
+        text-align: start;
+        margin: 5px;
+      }
+
+      .text-points {
+        color: white;
+      }
+
+      h3 {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section class="services-container">
+    <h2>Offline & Office Marketing</h2>
+    <p>Promote your brand in the real world through impactful local advertising and strategic placements.</p>
+
+    <div class="services-section">
+
+      <div class="service-box">
+        <img src="img/autoads-img.webp" alt="Auto Ads">
+        <h3>Auto Ads</h3>
+        <ul>
+          <li>Branding on auto-rickshaws for local visibility</li>
+          <li>Coverage in high-traffic city areas</li>
+          <li>Custom ad designs for vehicle wraps</li>
+          <li>Daily commuting exposure to thousands</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/newspaper-img.jpg" alt="Newspaper Ads">
+        <h3>Newspaper Ads</h3>
+        <ul>
+          <li>Ads in regional & city-wide newspapers</li>
+          <li>Various sizes: classifieds to full-page spreads</li>
+          <li>Targeted reach by location and language</li>
+          <li>Ideal for offers, launches & announcements</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/adboards-img.jpg" alt="Ad Boards">
+        <h3>Ad Boards Placement</h3>
+        <ul>
+          <li>Boards near metro stations & bus stops</li>
+          <li>High visibility at junctions & traffic signals</li>
+          <li>Flex, LED & digital hoarding options</li>
+          <li>Local targeting for brand awareness</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/pmple-img.webp" alt="Pamphlets">
+        <h3>Pamphlet Distribution</h3>
+        <ul>
+          <li>Door-to-door delivery in selected areas</li>
+          <li>Event, mall, and public spot distribution</li>
+          <li>Printed in local languages for better impact</li>
+          <li>Cost-effective mass marketing strategy</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
