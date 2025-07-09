@@ -614,7 +614,21 @@ ul{
 }
 
 .Footer-1 span{
-  color: #314fbd;
+  color: #5b33ec;
+}
+.subscribe-btn {
+  background-color: #5b33ec; /* Bootstrap primary blue */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color:#5b33ec; /* Darker blue on hover */
 }
 
 .Footer-1 p{
@@ -625,8 +639,8 @@ ul{
 }
 .btnsecondary{
   color: white;
-  border: 2px solid #314fbd;
-  background-color:#314fbd ;
+  border: 2px solid #5b33ec;
+  background-color:#5b33ec ;
   border-radius: 10px;
   padding: 3px 3px;
 }
@@ -636,7 +650,7 @@ ul{
   width: 30%;
 }
 .Footer-2 h3{
-  color: #314fbd;
+  color: #5b33ec;
 }
 
 .Footer-2 ul li {
@@ -661,7 +675,7 @@ ul{
 }
 
 .Footer-3 h3{
-  color: #314fbd;
+  color: #5b33ec;
   font-size: 20px;
 }
 
@@ -676,7 +690,7 @@ ul{
 }
 
 .Footer-4 h3{
-  color: #314fbd;
+  color: #5b33ec;
   
 }
 .img-icon{

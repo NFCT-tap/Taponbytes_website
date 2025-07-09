@@ -263,12 +263,19 @@ ul{
 .para{
   font-size: 12px;
 }
-.btnsecondary{
+.subscribe-btn {
+  background-color:  #5b33ec; /* Bootstrap primary blue */
   color: white;
-  border: 2px solid #5b33ec;
-  background-color:#5b33ec;
-  border-radius: 10px;
-  padding: 3px 3px;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color:  #5b33ec; /* Darker blue on hover */
 }
 
 .Footer-2{
@@ -414,7 +421,7 @@ ul{
         <input type="tel" name="Phone" placeholder="Phone Number">
         <textarea name="Message" rows="5" placeholder="Your Message here" required></textarea>
       
-        <button type="submit">Send Message →</button>
+        <button type="submit" >Send Message →</button>
       </form>
     </div>
      <!--contact form right section-->
@@ -456,7 +463,7 @@ ul{
     
       <!-- Input -->
       <input type="email" name="email" placeholder="Enter your email" required>
-      <button type="submit">Subscribe</button>
+      <button type="submit" class="subscribe-btn">Subscribe</button>
     </form>
     
     </div>
