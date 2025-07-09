@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Program 5</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      overflow-x: hidden;
+      font-family: sans-serif;
+      background-color: #ffffff;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .services-container {
+      padding: 40px 20px;
+      text-align: center;
+      background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/04/Website-Backgrounds-For-Desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    h2 {
+      font-size: 35px;
+      font-weight: bold;
+      color: rgb(250, 250, 253);
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      color: #f8f8f8;
+      margin-bottom: 30px;
+    }
+
+    .services-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-box {
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      flex: 1 1 calc(25% - 30px); /* 4 in a row */
+      min-width: 260px;
+      max-width: 280px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .service-box img {
+      max-width: 200px;
+      margin: 0 auto 10px auto;
+    }
+
+    .service-box h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+      color: #373adb;
+    }
+
+    .service-box li {
+      font-size: 16px;
+      color: #101111;
+      text-align: start;
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
+
+    ul {
+      padding-left: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .service-box {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="services-container">
+    <h2>Digital Marketing</h2>
+    <p>We craft targeted digital strategies to grow your brand, engage your audience, and drive results.</p>
+
+    <div class="services-section">
+
+      <div class="service-box">
+        <img src="img/instagram img.jpg" alt="">
+        <h3>Instagram Marketing</h3>
+        <ul>
+          <li>Reels, static posts & stories planning</li>
+          <li>Hashtag research for better reach</li>
+          <li>Creative content calendar</li>
+          <li>Engagement boost strategies</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/social media.png" alt="">
+        <h3>Social Media Management</h3>
+        <ul>
+          <li>Daily posts & timely responses</li>
+          <li>Story updates & interactive polls</li>
+          <li>Consistent brand tone & style</li>
+          <li>Platform-specific content strategy</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/ad campaigns img.webp" alt="">
+        <h3>Ad Campaigns (FB/IG)</h3>
+        <ul>
+          <li>Targeted ad creation</li>
+          <li>Lead generation & conversions</li>
+          <li>Budget planning & tracking</li>
+          <li>Performance reports & insights</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/Google review img.jpg" alt="">
+        <h3>Google Review Management</h3>
+        <ul>
+          <li>Increase positive reviews</li>
+          <li>Respond to customer feedback</li>
+          <li>Monitor ratings & insights</li>
+          <li>Improve local SEO visibility</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/branding img.jpg" alt="">
+        <h3>Branding & Design</h3>
+        <ul>
+          <li>Logo, flyers & banner designs</li>
+          <li>Product packaging design</li>
+          <li>Visual brand identity setup</li>
+          <li>Print & digital marketing materials</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/influencer img.jpg" alt="">
+        <h3>Influencer Tie-Ups</h3>
+        <ul>
+          <li>Find local influencers</li>
+          <li>Plan content collaborations</li>
+          <li>Manage deals & deliverables</li>
+          <li>Track results & reach</li>
+        </ul>
+      </div>
+
+      <div class="service-box">
+        <img src="img/Analytics & Reports img.jpg" alt="">
+        <h3>Analytics & Reports</h3>
+        <ul>
+          <li>Monthly performance reports</li>
+          <li>Growth tracking (reach, likes, etc.)</li>
+          <li>Content performance analysis</li>
+          <li>Data-driven improvement tips</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>

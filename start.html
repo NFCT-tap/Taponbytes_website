@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Start Your Work</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background:rgb(243, 242, 250);
+      color: rgb(53, 79, 196);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      background: rgba(92, 59, 240, 0.05);
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+      gap: 20px;
+    }
+    h2{
+      text-align: center;
+      color: blue;
+    }
+
+    .form-box {
+      flex: 1;
+    }
+
+    .form-box h2 {
+      margin-bottom: 20px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 12px;
+      font-size: 0.9em;
+    }
+
+    input,
+    select,
+    textarea {
+      margin-top: 6px;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+   
+
+    .team-images {
+      position: relative;
+      flex: 0.8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .team-images img {
+      border-radius: 50%;
+      width: 290px;
+      height: 290px;
+      object-fit: cover;
+      border: 3px solid white;
+      position: absolute;
+      transition: transform 0.3s ease;
+    }
+
+    .img2 {
+      top: 30%;
+      left: 20%;
+    }
+
+    .team-images img:hover {
+      transform: scale(1.1);
+    }
+
+    /* ✅ Responsive Layout Fix */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px;
+      }
+
+      .form-box {
+        width: 100%;
+      }
+
+      .team-images {
+        display: none; /* Hides image on small screens */
+      }
+
+      input,
+      select,
+      textarea,
+      button {
+        font-size: 1em;
+      }
+    }
+
+    @media (max-width: 600px) {
+      input,
+      select,
+      textarea {
+        font-size: 0.95em;
+      }
+
+      button {
+        font-size: 0.95em;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="form-box">
+      <h2>Start Your Work</h2>
+      
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="e1e20ffd-f652-4781-87b0-42698383f98a">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+        <label for="contact">Contact Number</label>
+        <input type="contact" id="contact" name="contact" placeholder="Your Number" required />
+
+        <label for="company">Company/Brand Name</label>
+        <input type="text" id="company" name="company" placeholder="Your Company or Brand" />
+
+        <label for="build">What do you want us to build?</label>
+        <select id="build" name="build">
+          <option value="Disable Selected">Select Your Project type</option>
+          <option value="website">Digital Marketing</option>
+          <option value="mobile">Theatre Billing Software</option>
+          <option value="website">NFC Boards(Acrylic & Metal)</option>
+          <option value="mobile">Magical Review QR System</option>
+          <option value="website">Offline Marketing(Auto ads, newspapers,etc..)</option>
+          <option value="mobile">Branding & Design (Logo, Menu,Packaging, etc..)</option> 
+          <option value="website">Website Design & Development</option>
+          <option value="mobile">Mobile App Development(Android, IOS,Tab)</option>
+        </select>
+
+        <label for="details">Project Details</label>
+        <textarea id="details" rows="4" name="Project_details" placeholder="Describe your project..."></textarea>
+        
+        <label for="budget">Select Your Budget</label>
+        <select id="budget" name="budget">
+          <option value="Disable Selected">Select your budget</option>
+          <option value="15k">15000-25000</option>
+          <option value="25k">25000-35000</option>
+          <option value="35k">35000+</option>
+          <option value="other">other</option>     
+        </select>
+        <!--Hidden input box for other-->
+        
+        <button type="submit">Submit</button>
+      </form>
+   
+    </div>
+
+    <div class="team-images"> 
+      <img src="img/contact logo.jpg" class="img2" alt="Team member" />
+    </div>
+  </div>
+</body>
+</html>

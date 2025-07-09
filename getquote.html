@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a quote</title>
+    <style>
+       
+ .get-quote-section {
+  background-color: #efeff5;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.quote-container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.get-quote-section h2 {
+  font-size: 28px;
+  color: #2b3a55;
+  margin-bottom: 10px;
+}
+
+.get-quote-section h3 {
+  margin-top: 25px;
+  color: #444;
+}
+
+.get-quote-section p,
+.get-quote-section ul,
+.get-quote-section ol {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.get-quote-section ul,
+.get-quote-section ol {
+  padding-left: 20px;
+}
+
+.get-quote-section .note {
+  background-color: #fff3cd;
+  padding: 10px 15px;
+  border-left: 5px solid #ffc107;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.get-quote-section .quote-form {
+  max-width: 800px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.quote-form input,
+.quote-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.quote-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.quote-form button {
+  background-color: #2b3a55;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.quote-form button:hover {
+  background-color: #1f2b40;
+}
+
+.get-quote-section .contact-tip {
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+      .quote-container,
+      .quote-form {
+        padding: 20px;
+      }
+
+      .quote-form input,
+      .quote-form textarea {
+        font-size: 14px;
+      }
+
+      h2 {
+        font-size: 24px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+
+      .quote-form button {
+        font-size: 15px;
+      }
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Get Quote Section -->
+<section class="get-quote-section">
+    <div class="quote-container">
+      <h2>📝 Get a Quote</h2>
+      <p>We’re excited to hear about your project!</p>
+  
+      <p>
+        Whether it’s a website, branding, digital marketing, software, or any custom solution — our team is ready to help you bring your vision to life.
+      </p>
+  
+      <h3>🔍 What We Need from You</h3>
+      <ul>
+        <li>A brief description of your project</li>
+        <li>Any specific features or requirements</li>
+        <li>Your preferred timeline</li>
+        <li>Budget range </li>
+      </ul>
+  
+      <h3>📩 What You’ll Get</h3>
+      <ul>
+        <li>A personalized quote based on your requirements</li>
+        <li>Clear timeline and cost breakdown</li>
+        <li>Helpful suggestions (if needed)</li>
+        <li>No hidden charges – full transparency</li>
+      </ul>
+  
+      <h3>💬 How It Works</h3>
+      <ol>
+        <li>Fill out the form below</li>
+        <li>We’ll review and respond within <strong>24–48 hours</strong></li>
+      </ol>
+  
+      <p class="note">🔔 <strong>Note:</strong> The more details you provide, the more accurate your quote will be.</p>
+    </div>
+  
+    <!-- Get Quote Form Section -->
+<section class="get-quote-section">
+    <form action="https://api.web3forms.com/submit" method="POST" class="quote-form">
+      
+      <!-- Your Web3Forms Access Key -->
+      <input type="hidden" name="access_key" value="e1e20ffd-f652-4781-87b0-42698383f98a">
+      
+      <!-- Redirect after form submission -->
+  
+      <!-- Disable CAPTCHA (optional, only if configured in Web3Forms dashboard) -->
+      <!-- <input type="hidden" name="captcha" value="false"> -->
+  
+      <h3>📨 Request a Quote</h3>
+  
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="tel" name="phone" placeholder="Phone Number">
+      <input type="text" name="project_type" placeholder="Project Type (e.g., Website, Logo)" required>
+      <textarea name="description" placeholder="Describe your project..." required></textarea>
+      <input type="text" name="budget" placeholder="Estimated Budget">
+  
+      <button type="submit">Submit Quote Request</button>
+    </form>
+  
+    <p class="contact-tip">📞 Need help? <a href="contact.html">Contact Us</a>.</p>
+  </section>
+  
+  
+</body>
+</html>
